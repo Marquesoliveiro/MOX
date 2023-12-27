@@ -1,0 +1,116 @@
+/*
+Nom: Marques Oliveira
+
+Prénom: Oscar
+
+Classe: I.DA-D1A
+
+Date: 19.12.2023
+
+*/
+
+* {
+    margin: 0;
+    font-family: magic;
+    box-sizing: border-box;
+    color: lightgray;
+}
+
+@font-face {
+    font-family: "magic";
+    src: url(../font/magic.ttf);
+}
+
+body {
+    background-color: #1f1e1e; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/* HEADER */
+header {
+    background-color: #1f1e1e; 
+    background: url(../img/landscape.jpg) no-repeat 80% 55%;
+    text-align: left;
+    font-size:xx-large;
+    height: 350px;
+
+}
+header >h1 {
+    margin: 10px;
+}
+
+
+
+/* NAV */
+nav {
+    background-color: #1f1e1e;   
+    text-align: start;
+    height: 40px;
+    /*Flexbox*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size:medium;
+}
+
+a {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    background-color:  #626060;
+}
+
+
+
+/* main */
+main {
+    background-color: rgb(70, 70, 70);
+    background: url(../img/gray_background.jpg);
+    font-size: x-large;
+}
+
+
+
+
+/* toutes les sections */
+.sections {
+    background-color: #1f1e1e80;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+
+/*article avec float pour laisser le texte aller sous l'image si besoin*/
+article > img {
+    height: 200px;
+    width: auto;   
+    border-radius: 10px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #1f1e1e;
+    height: 40px;
+    /*Flexbox*/
+    display: flex;
+    flex-direction: column;
+}
